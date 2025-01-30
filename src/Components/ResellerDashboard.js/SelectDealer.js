@@ -50,6 +50,9 @@ const SelectDealer = () => {
             toast.error('Error adding dealer');
         });
     };
+    const handleReload=()=>{
+        window.location.reload()
+    }
 
     return (
         <div className="container">
@@ -82,6 +85,12 @@ const SelectDealer = () => {
                     <button className="loginButton" onClick={handleDealer}>
                         Select Now
                     </button>
+                </div>
+                <div className="row my-4">
+                <div className="d-flex justify-content-center align-items-center">
+                    <button className='btn btn-danger' style={{borderRadius:"15px"}} onClick={handleReload}>Reload</button>
+                </div>
+                    
                 </div>
             </div>
         </div>
